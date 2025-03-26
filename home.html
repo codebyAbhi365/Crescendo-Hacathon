@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Rewards</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+     <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 95%;
+    max-width: 450px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification {
+    width: 20px;
+    height: 20px;
+    background: url('bell-icon.png') no-repeat center;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+
+.add-area {
+    width: 100%;
+    padding: 10px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.reward-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 50px;
+}
+
+.locations {
+    margin-top: 15px;
+}
+
+.location {
+    background: #e9ecef;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.accept {
+    background: #10b981;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.container {
+    width: 95%;
+    max-width: 450px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.location-card {
+    background: white;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s;
+}
+
+.location-card:hover {
+    transform: scale(1.03);
+}
+
+.location-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+.location-info {
+    flex: 1;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 0;
+    color: #222;
+}
+
+.updated {
+    font-size: 14px;
+    color: gray;
+    margin: 5px 0;
+}
+
+.accept {
+    background: #10b981;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.accept:hover {
+    background: #0d8a6b;
+}
+
+     </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Hii Sameer</h2>
+            <button class="notification"></button>
+        </header>
+        <button class="add-area">Give Area Details For Cleaning</button>
+        <div class="reward-cards">
+            <div class="card">
+                <img src="certificate.png" alt="Certificate">
+                <p>Clean 5 Areas & Win a Certificate</p>
+            </div>
+            <div class="card">
+                <img src="bus-pass.png" alt="Bus Pass">
+                <p>Clean 10 Areas & Win a Free PMPL Pass</p>
+            </div>
+            <div class="card">
+                <img src="metro-pass.png" alt="Metro Pass">
+                <p>Clean 10 Areas & Win a Free Metro Pass</p>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Available Cleaning Locations</h2>
+    
+            <div class="location-card">
+                <img src="https://source.unsplash.com/300x200/?street,garbage" alt="Location Image">
+                <div class="location-info">
+                    <h3>📍 Near Katraj Dairy, Pune</h3>
+                    <p class="updated">🕒 Updated: 24/03/2025</p>
+                    <button class="accept">✅ Accept</button>
+                </div>
+            </div>
+    
+            <div class="location-card">
+                <img src="https://source.unsplash.com/300x200/?road,cleaning" alt="Location Image">
+                <div class="location-info">
+                    <h3>📍 VIT College Back Gate</h3>
+                    <p class="updated">🕒 Updated: 22/03/2025</p>
+                    <button class="accept">✅ Accept</button>
+                </div>
+            </div>
+    
+        </div>
+    
+        <!-- <div class="locations">
+            <div class="location">
+                <p>📍 Near Katraj Dairy, Pune</p>
+                <p class="date">Updated: 24/3/25</p>
+                <button class="accept">Accept</button>
+            </div>
+            <div class="location">
+                <p>📍 VIT College Back Gate</p>
+                <p class="date">Updated: 22/3/25</p>
+                <button class="accept">Accept</button>
+            </div>
+        </div>
+    </div> -->
+</body>
+</html>

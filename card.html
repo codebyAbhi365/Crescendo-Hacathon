@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updated Cards UI</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f2f5;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            background: white;
+            width: 500px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price-distance {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .location {
+            font-size: 14px;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        .image-placeholder {
+            width: 80px;
+            height: 80px;
+            background: #ccc;
+            border-radius: 5px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .btn {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 48%;
+        }
+
+        .reject {
+            background: red;
+            color: white;
+        }
+
+        .accept {
+            background: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="top-section">
+            <div>
+                <div class="price-distance">Rs. 500 | 4.5km</div>
+                <div class="location">MG Road, Pune, Maharashtra</div>
+            </div>
+            <div class="image-placeholder"></div>
+        </div>
+        <div class="buttons">
+            <button class="btn reject">Reject</button>
+            <button class="btn accept">Accept</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="top-section">
+            <div>
+                <div class="price-distance">Rs. 700 | 3.2km</div>
+                <div class="location">Connaught Place, New Delhi</div>
+            </div>
+            <div class="image-placeholder"></div>
+        </div>
+        <div class="buttons">
+            <button class="btn reject">Reject</button>
+            <button class="btn accept">Accept</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="top-section">
+            <div>
+                <div class="price-distance">Rs. 600 | 5.1km</div>
+                <div class="location">Marine Drive, Mumbai, Maharashtra</div>
+            </div>
+            <div class="image-placeholder"></div>
+        </div>
+        <div class="buttons">
+            <button class="btn reject">Reject</button>
+            <button class="btn accept">Accept</button>
+        </div>
+    </div>
+
+</body>
+</html>

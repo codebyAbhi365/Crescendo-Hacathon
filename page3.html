@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Task</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        .form-container input, .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .upload-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .upload-btn {
+            padding: 10px;
+            background: #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .upload-button {
+            background: #add8e6;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .task-card {
+            background: black;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .task-card .completed-btn {
+            background: yellow;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .bottom-nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 14px;
+        }
+        .nav-icon {
+            font-size: 24px;
+        }
+        @media screen and (min-width: 768px) {
+            .container {
+                max-width: 600px;
+            }
+            .bottom-nav {
+                width: 600px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span>Hii Rajesh</span>
+            <span class="nav-icon">&#128276;</span>
+        </div>
+        <div class="form-container">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Phn No">
+            <div class="upload-section">
+                <input type="text" placeholder="Before Image" disabled>
+                <span class="upload-btn">Add File</span>
+            </div>
+            <div class="upload-section">
+                <input type="text" placeholder="After Image" disabled>
+                <span class="upload-btn">Add File</span>
+            </div>
+            <button class="upload-button">Upload</button>
+        </div>
+        <div class="task-card">
+            <p>&#8358;500 &nbsp; 4.5km</p>
+            <p>&#128205; 20 Kado street, Ikeja Lagos</p>
+            <p>&#128205; 20 Kado street, Ikeja Lagos</p>
+            <div class="completed-btn">Completed</div>
+        </div>
+        <nav class="bottom-nav">
+            <div class="nav-item">
+                <span class="nav-icon">&#8962;</span>
+                <span>Home</span>
+            </div>
+            <div class="nav-item">
+                <span class="nav-icon">&#x1F4CD;</span>
+                <span>Location</span>
+            </div>
+            <div class="nav-item">
+                <span class="nav-icon">&#127942;</span>
+                <span>Reward</span>
+            </div>
+            <div class="nav-item">
+                <span class="nav-icon">&#128100;</span>
+                <span>Profile</span>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
